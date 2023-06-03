@@ -34,7 +34,7 @@
 	<ThingDef ParentName="BushBase">
 		<defName>RG_Plant_TropicalFern</defName>
 		<label>fern</label>
-		<description>A short shrub with long, fine leaves. Grows in tropical areas</description>
+		<description>A short shrub with long, fine leaves. Grows in tropical areas.</description>
 		<graphicData>
 			<texPath>Things/Plant/TropicalFern</texPath>
 			<drawSize>1.15</drawSize>
@@ -81,11 +81,11 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
-	<!--=============== Tropical Tidalis ==============-->
+	<!--=============== Tidalis ==============-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_Tidalis</defName>
 		<label>tidalis</label>
-		<description>A genetically altered version of common ivy adapted to thrive in tropical areas.</description>
+		<description>A genetically altered version of common ivy crossed with a tropical flower adapted to thrive in tropical areas.</description>
 		<graphicData>
 			<texPath>Things/Plant/Tidalis</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -109,6 +109,38 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>4</wildClusterWeight>
 			<visualSizeRange>0.25~0.75</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<!--=============== Bromeliad ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_Bromeliad</defName>
+		<label>bromeliad</label>
+		<description>A beautiful flower with broad leaves which grows in large clusters.</description>
+		<graphicData>
+			<texPath>Things/Plant/Bromeliad</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.15</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Nutrition>0.15</Nutrition>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<growDays>15</growDays>
+			<harvestWork>75</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>0.25~0.65</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 			<wildOrder>1</wildOrder>
 		</plant>
@@ -211,6 +243,40 @@
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	<!--=============== Neo Amanita ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_NeoAmanita</defName>
+		<label>neo amanita</label>
+		<description>A genetically engineered version of the common amanita to be save for human consumption growing in clusters. It grows exclusively in tropical regions.</description>
+		<graphicData>
+			<texPath>Things/Plant/NeoAmanita</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>15</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.04</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>16</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>28</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.5~0.7</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
 	<!--=============== Dwarf Palm Tree ==============-->

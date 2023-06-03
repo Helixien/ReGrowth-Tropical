@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--=============== Neo Amanita ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_NeoAmanita</defName>
+		<label>neo amanita</label>
+		<description>A genetically engineered version of the common amanita to be save for human consumption growing in clusters. It grows exclusively in tropical regions.</description>
+		<graphicData>
+			<texPath>Things/Plant/NeoAmanita</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>15</pathCost>
+		<ingestible/>
+		<plant>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>RG_MushroomCultivation</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilityMin>0.04</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>10</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>20</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.5~0.7</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+</Defs>
