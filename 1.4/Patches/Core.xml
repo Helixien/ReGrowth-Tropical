@@ -32,6 +32,8 @@
 					<RG_Plant_TropicalBrambles>0.4</RG_Plant_TropicalBrambles>
 					<RG_Plant_TreeDwarfPalm>0.9</RG_Plant_TreeDwarfPalm>
 					<RG_Plant_TallPalmTree>0.25</RG_Plant_TallPalmTree>
+					<RG_Plant_NeoAmanita>0.000000000000001</RG_Plant_NeoAmanita>
+					<!--=============== Why the 0s? Because I cant lock them to a biome unless the value is greater than 0 because fuck me I gues... ==============-->
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -47,6 +49,8 @@
 					<RG_NeoAmanita>0.025</RG_NeoAmanita>
 					<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
 					<RG_Plant_TallPalmTree>0.05</RG_Plant_TallPalmTree>
+					<RG_Plant_NeoAmanita>0.000000000000001</RG_Plant_NeoAmanita>
+					<!--=============== Why the 0s? Because I cant lock them to a biome unless the value is greater than 0 because fuck me I gues... ==============-->
 				</value>
 			</li>
 		</operations>
