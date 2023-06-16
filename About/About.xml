@@ -25,7 +25,4 @@ ReGrowth is designed to be as lightweight as possible, adding the minimum of new
 	<loadAfter>
 		<li>ReGrowth.BOTR.Core</li>
 	</loadAfter>
-	<loadBefore>
-		<li>Balthoraz.RimUniverse.BiomesModule</li>
-	</loadBefore>
 </ModMetaData>
