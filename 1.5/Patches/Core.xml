@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest" or defName = "TropicalSwamp"]/terrainsByFertility</xpath>
+				<value>
+					<terrainsByFertility>
+						<li>
+							<terrain>RG_TropicalSoil</terrain>
+							<min>-999</min>
+							<max>0.87</max>
+						</li>
+						<li>
+							<terrain>SoilRich</terrain>
+							<min>0.87</min>
+							<max>999</max>
+						</li>
+					</terrainsByFertility>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TropicalIvy>2.5</RG_Plant_TropicalIvy>
+					<RG_Plant_TropicalFern>0.4</RG_Plant_TropicalFern>
+					<RG_Plant_Oxalis>0.4</RG_Plant_Oxalis>
+					<RG_Plant_Plumeria>0.4</RG_Plant_Plumeria>
+					<RG_Plant_Tidalis>1.5</RG_Plant_Tidalis>
+					<RG_Plant_Bromeliad>1</RG_Plant_Bromeliad>
+					<RG_NeoAmanita>0.05</RG_NeoAmanita>
+					<RG_Plant_TropicalBrambles>0.4</RG_Plant_TropicalBrambles>
+					<RG_Plant_TreeDwarfPalm>0.9</RG_Plant_TreeDwarfPalm>
+					<RG_Plant_TallPalmTree>0.25</RG_Plant_TallPalmTree>
+					<RG_Plant_NeoAmanita>0.000000000000001</RG_Plant_NeoAmanita>
+					<!--=============== Why the 0s? Because I cant lock them to a biome unless the value is greater than 0, because fuck me I gues... ==============-->
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TropicalIvy>1.5</RG_Plant_TropicalIvy>
+					<RG_Plant_TropicalFern>0.8</RG_Plant_TropicalFern>
+					<RG_Plant_TropicalChokevine>1.5</RG_Plant_TropicalChokevine>
+					<RG_Plant_Oxalis>0.4</RG_Plant_Oxalis>
+					<RG_Plant_Plumeria>0.4</RG_Plant_Plumeria>
+					<RG_Plant_Tidalis>0.8</RG_Plant_Tidalis>
+					<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>
+					<RG_NeoAmanita>0.025</RG_NeoAmanita>
+					<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
+					<RG_Plant_TallPalmTree>0.05</RG_Plant_TallPalmTree>
+					<RG_Plant_NeoAmanita>0.000000000000001</RG_Plant_NeoAmanita>
+					<!--=============== Why the 0s? Because I cant lock them to a biome unless the value is greater than 0, because fuck me I gues... ==============-->
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
